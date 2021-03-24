@@ -2,12 +2,13 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Krona One', sans-serif;
+	/* font-family: 'Krona One', sans-serif; */
 }
+
 
 .intro {
 	background: #EAF0F1;
-	font-family: 'Krona One', sans-serif;
+	/* font-family: 'Krona One', sans-serif; */
 }
 
 h1 {
@@ -19,6 +20,161 @@ h1 {
 h3 {
 	color: #2F363F;
 }
+
+
+
+
+/*Profile card from here*/
+
+#wrapper {
+	opacity: 1; /*orig=0*/
+	display: table;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+  }
+  #wrapper.loaded {
+	opacity: 1;
+	transition: 2.5s ease-in-out;
+  }
+  #wrapper #content {
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0 auto;
+  }
+  #card {
+	height: 376px;
+	width: 276px; /*300*/
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+	perspective: 600px;
+	margin: 0 auto;
+	border-radius: 10px;
+	-webkit-transition: all 0.3s linear 0s;
+	-moz-transition: all 0.3s linear 0s;
+	-ms-transition: all 0.3s linear 0s;
+	-o-transition: all 0.3s linear 0s;
+	transition: all 0.3s linear 0s;
+  }
+  #card #front, #card #back {
+	border-radius: 10px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	margin: 0 auto;
+  }
+  #card #front {
+	transform: rotateY(0deg);
+	overflow: hidden;
+	z-index: 1;
+  }
+  
+  #card:hover,
+  .hover {
+	-webkit-box-shadow: 0px 1px 32px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 1px 32px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 1px 32px 0px rgba(0, 0, 0, 0.5);
+  }
+  #card:hover #top-pic {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
+	opacity: 0.88;
+  }
+  
+  #card #front #top-pic {             /*for card upper half pic*/ 
+	height: 50%;
+	width: 100%;
+	background-image: url(https://unsplash.imgix.net/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=857f07b76abac23a7fb7161cc7b12a46);
+	background-size: cover;
+	-webkit-transition: all 0.3s linear 0s;
+	-moz-transition: all 0.3s linear 0s;
+	-ms-transition: all 0.3s linear 0s;
+	-o-transition: all 0.3s linear 0s;
+	transition: all 0.3s linear 0s;
+  }
+  #card #front #avatar {
+	width: 114px;
+	height: 114px; /*114px*/
+	top: 50%;
+	left: 50%;
+	margin: -77px 0 0 -57px;
+	border-radius: 100%;
+	box-shadow: 0 0 0 3px rgba(255, 255, 255, .8), 0 4px 5px rgba(107, 5, 0, .6), 0 0 50px 50px rgba(255, 255, 255, .25);
+	background-image: url("img/sp2.jpeg");
+	background-size: contain;
+	position: absolute;
+	z-index: 1;
+  }
+  #card #front #info-box {
+	height: 50%;
+	width: 105%;/***********************************/
+	position: absolute;
+	display: table;
+	left: 0;
+	bottom: 0;
+	background: rgba(200, 38, 29, .87);
+	padding: 50px ;
+  }
+  #card #front #info-box h1{
+	font-size:21px;
+	font-weight:200;
+	color:white;
+	line-height:30px;
+	margin-bottom:10px; /*10*/
+  }
+  #card #front #info-box h2{
+	font-size:13.5px;
+	color:#222;
+  }
+  
+  #card #front #social-bar {
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	line-height: 50px;
+	font-size: 18px;
+	text-align: center;
+  }
+  #card #front #social-bar a {
+	display: inline-block;
+	/*color: #951009;*/
+	color: #222;
+	text-decoration: none;
+	padding: 5px;
+	line-height: 18px;
+	border-radius: 5px;
+  }
+  #card #front #social-bar a:hover {
+	/*color: #450300;*/
+	color: #000;
+	background: rgba(255, 255, 255, .3);
+	transition: 0.25s ease-in-out;
+  }
+  #card .info {
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+	text-align: center;
+  }
+  #card.flip #front {
+	transform: rotateY(180deg);
+  }
+  #card.flip #back {
+	transform: rotateY(360deg);
+  }
+
+  
+
+/***************************************************************/
 
 button {
 	border: none;
@@ -65,3 +221,4 @@ footer p {
 		padding-bottom: 100px;
 	}
 }
+

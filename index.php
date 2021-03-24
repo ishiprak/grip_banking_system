@@ -21,41 +21,28 @@
   include 'navbar.php';
   ?>
   
-      <div class="container-fluid">
+      <div class="container-fluid" style="background-color: rgba(255,255,255,0.3);backdrop-filter: blur(5px);">
       <!-- Introduction section -->
             <div class="row intro py-1">
-              <div class="col-lg-12 col-md">
-                <div class="heading text-center my-5" style="font-family:'Akronim', cursive">
-                  <h3 style="font-family:'Krona One', sans-serif">Welcome to</h3>
+              <div class="col-lg-12 col-md" style="margin-top: 2%;">
+                <div class="heading text-center my-5" style="font-family:'Akronim', cursive;margin-top: 4%; margin-bottom: 10%">
+                  <h3 style="font-family:'Krona One', sans-serif;margin-bottom: 2%;">Welcome to</h3>
                   <h1 style="font-size: 3.5rem; font-family:'Akronim', cursive">THE GRIP BANK</h1>
                 </div>
               </div>
               <div class="col-lg-12 col-md img text-center">
-                <img src="img/bank.png" class="img-fluid pt-2">
+                <img style="margin-bottom: 10%" src="img/bank.png" class="img-fluid pt-2">
               </div>
             </div>
 
       <!-- Activity section -->
             <div class="row activity text-center" style="margin-bottom: 10%">
-                  <div class="col-md act">
-                    <img src="img/user.jpg" class="img-fluid">
-                    <br>
-                    <a style="font-family:'Krona One', sans-serif" href="createuser.php"><button>Create a User</button></a>
-                  </div>
-                  <div class="col-md act">
-                    <img src="img/transfer.jpg" class="img-fluid">
-                    <br>
-                    <a style="font-family:'Krona One', sans-serif" href="transfermoney.php"><button>Make a Transaction</button></a>
-                  </div>
-                  <div class="col-md act">
-                    <img src="img/history.jpg" class="img-fluid">
-                    <br>
-                    <a style="font-family:'Krona One', sans-serif" href="transactionhistory.php"><button>Transaction History</button></a>
-                  </div>
+            
+              <img src="img/bank.jpg" alt="bank" style="width:100%"/>
+            
             </div>
       </div>
       <footer class="text-center mt-5 py-2" style="line-height:200%;background-color: #343a40;">
-        <!-- <p>&copy 2020. Made by <b>SHIVAM PRAKASH</b> with  <br> The Sparks Foundation</p> -->
         <a target="_blank" style="text-decoration:none; color:white; font-family:'Krona One', sans-serif; !important" href="https://www.linkedin.com/in/ishiprak/"><span>Designed and Made with <i style="color: red; margin-left: 6px; margin-right: 6px;" class='fa fa-heart fa-beat'></i> by Shivam Prakash</span></a>
       </footer>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

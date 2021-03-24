@@ -18,5 +18,8 @@
               <li style="font-family:'Krona One', sans-serif" class="nav-item">
                 <a class="nav-link" style="color:white; font-family:Verdana" href="transactionhistory.php">Transaction History</a>
               </li>
+              <li style="font-family:'Krona One', sans-serif" class="nav-item">
+                <a class="nav-link" style="color:white; font-family:Verdana" href="about.php">About</a>
+              </li>
           </div>
        </nav>
